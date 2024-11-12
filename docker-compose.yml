@@ -1,0 +1,33 @@
+version: '3.1'
+
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html:rw
+    restart: always
+    depends_on:
+      - db
+
+  db:
+    container_name: db
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: inventory_db
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: db_pass
+      MYSQL_ROOT_PASSWORD: mysql_db_pass
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./inventory_db.sql:/docker-entrypoint-initdb.d/inventory_db.sql
+      - ./mysql-data:/var/lib/mysql
+
+volumes:
+  db_data:
