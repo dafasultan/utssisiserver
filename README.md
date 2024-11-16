@@ -8,7 +8,7 @@
 ## Inventory
 
 ## Tentang Aplikasi
-Aplikasi ini merupakan sistem manajemen inventory yang dikembangkan untuk mempermudah pemantauan dan pengelolaan stok barang dalam suatu perusahaan atau bisnis. Dibangun menggunakan teknologi [sebutkan teknologi atau framework, misalnya: Node.js, Laravel], aplikasi ini dirancang agar pengguna dapat melakukan pencatatan, pemantauan, serta pembaruan data inventory secara efisien dan akurat. Tujuan utama aplikasi ini adalah untuk membantu perusahaan dalam mengoptimalkan pengelolaan stok, mengurangi kesalahan pencatatan, dan meningkatkan visibilitas atas status persediaan barang.
+Aplikasi ini merupakan sistem manajemen inventory yang dikembangkan untuk mempermudah pemantauan dan pengelolaan stok barang dalam suatu perusahaan atau bisnis. Dibangun menggunakan teknologi framework Laravel, aplikasi ini dirancang agar pengguna dapat melakukan pencatatan, pemantauan, serta pembaruan data inventory secara efisien dan akurat. Tujuan utama aplikasi ini adalah untuk membantu perusahaan dalam mengoptimalkan pengelolaan stok, mengurangi kesalahan pencatatan, dan meningkatkan visibilitas atas status persediaan barang.
 
 ## Cara Menjalankan Aplikasi Menggunakan Docker Compose
 Persiapan Docker dan Docker Compose
@@ -18,8 +18,9 @@ Pastikan Docker dan Docker Compose sudah terpasang di sistem Anda. Jika belum, i
 Lakukan clone repository ke sistem lokal Anda dengan perintah berikut:
 
 ## Copy code
-git clone <URL_REPO_ANDA>
-cd <NAMA_FOLDER_REPO>
+git clone https://github.com/dafasultan/utssisiserver
+cd utssisiserver
+
 ## Menjalankan Docker Compose
 Di direktori utama repository, jalankan perintah ini untuk memulai seluruh layanan yang telah dikonfigurasi dalam docker-compose.yml:
 
